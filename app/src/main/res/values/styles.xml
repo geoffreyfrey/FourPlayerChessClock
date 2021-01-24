@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Main Text Style for big Timer -->
+    <style name="MainTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <!-- Text style for the small timers -->
+    <style name="SmallTimerTextStyle" parent="@android:style/TextAppearance.DeviceDefault.SearchResult.Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <!-- NumberPicker Dialog Example Style
+    <style name="MyNumberPickerTheme" parent="@android:style/Widget.Material.NumberPicker">
+        <item name="colorControlNormal ">#01579b</item>
+        <item name="android:background">#64b5f6</item>
+    </style>
+    -->
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.geoffreyfrey.fourplayerchessclock.MainActivity"
+    android:id="@+id/main">
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/my_toolbar">
+    </include>
+
+
+    <TableLayout
+        android:id="@+id/mainTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_toolbar"
+        android:layout_margin="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/main_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="0dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/playerTwoBackground"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="#1A237E"
+                    android:layout_margin="0dp">
+
+                    <TextView
+                        android:id="@+id/playerTwoTimer"
+                        style="@style/SmallTimerTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:rotation="135"
+                        android:gravity="center"
+                        android:text="Two"
+                        android:layout_margin="0dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="1px"
+                    android:layout_margin="0dp"
+                    android:background="#BDBDBD"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/playerThreeBackground"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="#004D40"
+                    android:layout_margin="0dp">
+
+                    <TextView
+                        android:id="@+id/playerThreeTimer"
+                        style="@style/SmallTimerTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:rotation="-135"
+                        android:gravity="center"
+                        android:text="Three"
+                        android:layout_margin="0dp"/>
+                </RelativeLayout>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="0dp"
+                android:background="#000">
+
+                    <TextView
+                        android:id="@+id/timer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/string_start_instructions"
+                        style = "@style/MainTextStyle"
+                        android:background="@drawable/delay_background"
+                        android:layout_margin="0dp"
+                        />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/playerOneBackground"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="#E57373"
+                    android:layout_margin="0dp">
+                    <TextView
+                        android:id="@+id/playerOneTimer"
+                        style="@style/SmallTimerTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:rotation="45"
+                        android:gravity="center"
+                        android:text="One" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="1px"
+                    android:background="#BDBDBD"
+                    />
+                <RelativeLayout
+                    android:id="@+id/playerFourBackground"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="#BF360C"
+                    android:layout_margin="0dp">
+
+                    <TextView
+                        android:id="@+id/playerFourTimer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/SmallTimerTextStyle"
+                        android:layout_centerInParent="true"
+                        android:rotation="-45"
+                        android:gravity="center"
+                        android:text="Four" />
+                </RelativeLayout>
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</RelativeLayout>

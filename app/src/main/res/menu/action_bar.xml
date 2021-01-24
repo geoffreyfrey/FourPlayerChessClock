@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- item to start a new hand -->
+    <!--<item-->
+    <!--android:id="@+id/new_match"-->
+    <!--android:icon="@drawable/ic_menu_btn_add"-->
+    <!--android:title="@string/new_match"-->
+    <!--app:showAsAction="ifRoom"-->
+    <!--/>-->
+
+    <item android:id = "@+id/set_total_time"
+        android:title="@string/string_set_total_time"
+        app:showAsAction="never"
+        />
+
+    <item android:id = "@+id/set_timer_delay"
+        android:title="@string/string_set_timer_delay"
+        app:showAsAction="never"
+        />
+
+    <item android:id = "@+id/new_game"
+        android:title="@string/string_new_game"
+        app:showAsAction="never"
+        />
+
+    <item android:id = "@+id/pause"
+        android:title="@string/string_pause"
+        app:showAsAction="never"
+        />
+
+
+</menu>

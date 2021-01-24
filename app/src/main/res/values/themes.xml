@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppCompatTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#9E9E9E</item>
+        <item name="colorPrimaryDark">#616161</item>
+        <item name="colorAccent">#BDBDBD</item>
+        <!--<item name="windowActionBar">false</item> -->
+    </style>
+
+    <style
+        name="PreferenceScreen"
+        parent="AppCompatTheme">
+
+    </style>
+
+
+</resources>
